@@ -1,48 +1,73 @@
-NLP Product Classification Project
+# NLP Product Classification Project
 
-This repository contains a semester project for product classification using NLP, where product descriptions are used to predict product categories.
+This repository contains a semester project focused on classifying products into predefined categories using Natural Language Processing (NLP). Product descriptions are analyzed using deep learning models to predict their corresponding categories.
 
-Project Overview
+---
 
-Goal: Classify products into categories (e.g., Household, Books, Clothing & Accessories, Electronics) based on their textual descriptions.
+## 📘 Project Overview
 
-Approach: Uses NLP techniques and deep learning models to analyze product descriptions and predict categories accurately.
+### Objective
+Predict product categories—such as **Household**, **Books**, **Clothing & Accessories**, and **Electronics**—from raw textual descriptions.
 
-Models Included:
+### Approach
+The project applies:
+- Classical NLP preprocessing,
+- Deep sequence models,
+- Transformer-based language models  
+to accurately infer category labels from product text.
 
-BiLSTM for sequence modeling and classification.
+---
 
-DeBERTa-v3-small for transformer-based classification (requires Google Drive access due to large size).
+## 🧠 Models Implemented
 
-Features
+### **BiLSTM**
+- Effective for modeling sequences.
+- Lightweight and easy to deploy.
+- Fully included in the repository.
 
-Predict categories from raw product descriptions.
+### **DeBERTa-v3-small**
+- Transformer-based model providing strong performance.
+- Model weights stored externally due to size limits (Google Drive link included in notebooks).
 
-Supports multiple deep learning architectures.
+---
 
-Ready-to-use inference notebooks for testing with new descriptions.
+## ✨ Features
 
-Files
+- Predict categories directly from raw product descriptions.
+- Multiple model architectures to compare performance.
+- Ready-to-use inference notebooks.
+- Easily extendable to new datasets or categories.
 
-.ipynb files – Jupyter notebooks containing model training and inference code.
+---
 
-Tokenizer and model files – Required for BiLSTM and DeBERTa inference (DeBERTa files are available via Google Drive).
+## 📁 Repository Contents
 
-Usage
+| File / Folder | Description |
+|---------------|-------------|
+| `*.ipynb` | Training, evaluation, and inference notebooks. |
+| `tokenizer/` | Tokenizer files for both BiLSTM and DeBERTa models. |
+| `models/` | Pretrained BiLSTM models (DeBERTa available via Google Drive). |
+| `utils/` | Helper scripts for text preprocessing and evaluation. |
 
-Clone this repository:
+---
 
-git clone <repo-url>
+## 🚀 Usage
 
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd <repository-folder>
 
-Open the desired notebook in Jupyter or Google Colab.
+2. Open a notebook
 
-Load the required model and tokenizer files.
+Use Jupyter Notebook or Google Colab.
 
-Add new product descriptions and run the inference cells to predict categories.
+3. Load the required models
 
-Notes
+BiLSTM: included in the repository.
 
-DeBERTa-v3-small model cannot be uploaded due to size limitations; access it via Google Drive.
+DeBERTa-v3-small: download from Google Drive and place in the correct directory.
 
-BiLSTM models are included and ready for direct use.
+4. Run inference
+
+Insert new product descriptions in the notebook and execute the inference cells to get predicted categories.
